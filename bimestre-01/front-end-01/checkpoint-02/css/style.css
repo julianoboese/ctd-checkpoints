@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  text-align: center;
+  padding: 150px;
+  background-image: url("../img/SPmasp1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+form {
+  background-color: #000;
+  color: #fff;
+  width: 350px;
+  padding: 20px 10px;
+  border-radius: 50px;
+  margin: auto;
+}
+
+.row {
+  padding: 10px 20px;
+}
+
+.row label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.row input {
+  height: 30px;
+  width: 100%;
+  transition: 500ms;
+}
+
+.row select {
+  height: 30px;
+  width: 100%;
+}
+
+.row label.idade {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: middle;
+}
+
+.row input.idade {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.row input.idade:hover {
+  box-shadow: 0 0 10px 2px rgb(221 160 46);
+}
+
+.row input.idade::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.row input.idade:checked::before {
+  background-color: #0075ff;
+}
+
+.row .button-submit,
+.row .button-reset {
+  border-radius: 50px;
+  width: 40%;
+  margin: 0 10px;
+  display: inline;
+}
+
+.row .interest {
+  display: inline-block;
+  margin: 5px;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.row input.interest {
+  width: 30px;
+}
+
+.row input:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px 2px rgb(221 160 46);
+}
+
+.row:hover .etiqueta {
+  color: salmon;
+}
+
+.row .button-reset:hover {
+  background-color: rgb(247 171 162);
+}
+
+.row .button-submit:hover {
+  background-color: rgb(169 241 169);
+}
+
+#ponto-interesse {
+  text-align: center;
+  font-size: 15px;
+}
+
+#data {
+  width: 50%;
+  text-align: center;
+  font-size: 15px;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <title>Checkpoint 2</title>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <form action="">
+        <h1>Cadastro</h1>
+        <div class="row">
+          <label for="nome" class="etiqueta">Nome</label>
+          <input type="name" name="nome" id="nome" />
+        </div>
+        <div class="row">
+          <label for="email" class="etiqueta">E-mail</label>
+          <input type="mail" name="email" id="email" />
+        </div>
+        <div class="row">
+          <label for="tel" class="etiqueta">Telefone</label>
+          <input type="tel" name="tel" id="tel" />
+        </div>
+        <div class="row">
+          <label for="data" class="etiqueta">Data de nascimento</label>
+          <input type="date" name="data" id="data" />
+        </div>
+        <div class="row idade">
+          <p for="idade" class="etiqueta">É maior de idade?</p>
+          <label for="idade-sim" class="idade"
+            >Sim<input
+              type="radio"
+              name="idade"
+              id="idade-sim"
+              value="Sim"
+              class="idade"
+          /></label>
+          <label for="idade-nao" class="idade"
+            >Não<input
+              type="radio"
+              name="idade"
+              value="Não"
+              id="idade-nao"
+              class="idade"
+          /></label>
+        </div>
+        <div class="row">
+          <label for="ponto" class="etiqueta"
+            >Escolha um ponto de interesse:</label
+          >
+          <select name="ponto" id="ponto-interesse" placeholder="">
+            <option value="" selected disabled>Selecione:</option>
+            <option value="praca-se">Praça da sé</option>
+            <option value="ibirapuera">Parque do Ibirapuera</option>
+            <option value="paulista">Av Paulista</option>
+          </select>
+        </div>
+        <div class="row">
+          <p class="etiqueta">Qual o seu interesse na cidade?</p>
+          <div>
+            <label for="turista" class="interest">Turismo</label>
+            <input
+              type="checkbox"
+              name="turista"
+              id="turista"
+              class="interest"
+            />
+          </div>
+          <div>
+            <label for="residente" class="interest">Residencia</label>
+            <input
+              type="checkbox"
+              name="residente"
+              id="residente"
+              class="interest"
+            />
+          </div>
+          <div>
+            <label for="estudante" class="interest">Estudos</label>
+            <input
+              type="checkbox"
+              name="estudante"
+              id="estudante"
+              class="interest"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="reset" value="apagar" class="button-reset" />
+          <input type="submit" value="enviar" class="button-submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
