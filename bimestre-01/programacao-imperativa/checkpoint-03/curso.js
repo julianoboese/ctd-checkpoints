@@ -1,12 +1,11 @@
-const estudantes = require('./estudantes'); // Passo 7
-const Aluno = require('./aluno'); // Passo 4
+const { Aluno, alunos } = require('./aluno'); // Passo 4
 
 // Passo 3
 const curso = {
   nomeDoCurso: 'Programação Imperativa',
   notaDeAprovacao: 8,
   faltasMaximas: 2,
-  listaDeEstudantes: estudantes, // Passo 7
+  listaDeEstudantes: alunos,
   // Passo 4
   adicionarEstudantes(nome, quantidadeDeFaltas, notas) {
     this.listaDeEstudantes.push(new Aluno(nome, quantidadeDeFaltas, notas));
