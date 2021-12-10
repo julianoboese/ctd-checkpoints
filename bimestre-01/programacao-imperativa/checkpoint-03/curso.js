@@ -12,7 +12,7 @@ const curso = {
   },
   // Passo 5
   aprovado(aluno) {
-    const estudante = this.listaDeEstudantes.filter((objetoAluno) => objetoAluno.nome === aluno)[0];
+    const estudante = this.listaDeEstudantes.find((objetoAluno) => objetoAluno.nome === aluno);
     const faltas = estudante.quantidadeDeFaltas;
     const media = estudante.calcularMedia();
     const criterio1 = (faltas < this.faltasMaximas && media >= this.notaDeAprovacao);
