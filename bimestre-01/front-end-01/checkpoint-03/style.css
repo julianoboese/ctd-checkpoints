@@ -1,0 +1,181 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+main {
+  margin-top: 67px;
+}
+
+.parallax {
+  position: relative;
+  background-image: url("../img/background.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-vingadores {
+  position: relative;
+  background-image: url("../img/vingadores.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax-coringa {
+  position: relative;
+  background-image: url("../img/coringa.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax-duna {
+  position: relative;
+  background-image: url("../img/duna.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax-jurassic {
+  position: relative;
+  background-image: url("../img/jurassic.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax-sonic {
+  position: relative;
+  background-image: url("../img/sonic.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.parallax-venom {
+  position: relative;
+  background-image: url("../img/venom.png");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.image-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.image-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.image-text p {
+  font-weight: 300;
+}
+
+.image-text button {
+  padding: 10px 70px;
+  border-radius: 10px;
+}
+
+.card {
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-body a {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  main {
+    margin-top: 59px;
+  }
+
+  .parallax {
+    min-height: 800px;
+  }
+
+  .parallax-vingadores {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .parallax-coringa {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .parallax-duna {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .parallax-jurassic {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .parallax-sonic {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .parallax-venom {
+    background-position-y: 59px;
+    min-height: 300px;
+  }
+
+  .image-text {
+    height: auto;
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .parallax-vingadores {
+    min-height: 200px;
+  }
+
+  .parallax-coringa {
+    min-height: 200px;
+  }
+
+  .parallax-duna {
+    min-height: 200px;
+  }
+
+  .parallax-jurassic {
+    min-height: 200px;
+  }
+
+  .parallax-sonic {
+    min-height: 200px;
+  }
+
+  .parallax-venom {
+    min-height: 200px;
+  }
+}
